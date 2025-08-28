@@ -276,6 +276,36 @@
             margin-top: 2px;
         }
 
+        /* PDF Export Button Styles */
+        .pdf-export-btn {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .pdf-export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .pdf-export-btn:active {
+            transform: translateY(0);
+        }
+
         @media print {
             body { 
                 font-size: 10px; 
@@ -288,10 +318,18 @@
                 border-radius: 0 !important;
             }
             .main-content { grid-template-columns: 1fr 280px; gap: 20px; }
+            .pdf-export-btn {
+                display: none !important;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- PDF Export Button -->
+    <button class="pdf-export-btn" onclick="exportToPDF()">
+        📄 Export to PDF
+    </button>
+
     <div class="container">
         <div class="header">
             <div class="profile-photo"></div>
@@ -299,7 +337,7 @@
                 <h1 class="name">FABIÁN IGNACIO MUÑOZ VÁSQUEZ</h1>
                 <div class="title">Site Reliability Engineer</div>
                 <div class="summary">
-                    Site Reliability Engineer with solid experience in observability and monitoring of critical systems for high-availability enterprise environments. Developing expertise in SRE practices including golden signals monitoring (latency, traffic, errors, saturation), service health assessment, and collaborative SLO implementation under senior guidance. Experienced in incident analysis, post-mortem investigations, and improving monitoring correlation in complex infrastructures. Experience implementing monitoring-as-code solutions with Terraform in AWS, Datadog, Grafana, and Prometheus environments for multiple devices and services. Scrum certified, currently leading a critical project for enterprise clients with focus on service reliability optimization. Background includes comprehensive technical support experience providing foundation for understanding enterprise infrastructure challenges. <span class="highlight">Actively seeking Google Cloud opportunities to apply proven troubleshooting skills and cross-cloud expertise in enterprise-scale reliability engineering.</span>
+                    Site Reliability Engineer with solid experience in observability and monitoring of critical systems for high-availability enterprise environments. Developing expertise in SRE practices, cloud infrastructure, and automation. Proven track record of implementing comprehensive monitoring solutions and maintaining system reliability in Fortune 500 companies. Strong foundation in DevOps methodologies with focus on continuous improvement and operational excellence.
                 </div>
             </div>
         </div>
@@ -318,7 +356,7 @@
                             <div class="company">Innfinit | Nov. 2022 - Present</div>
                         </div>
                         <div class="job-description">
-                            Site Reliability Engineer with 2+ years in observability and monitoring of critical systems for Fortune 500 enterprises. Specialized in golden signals monitoring, incident analysis, and SRE practices for high-availability financial services.
+                            Site Reliability Engineer with 2+ years in observability and monitoring of critical systems for Fortune 500 enterprises. Specialized in golden signals monitoring, incident response, and maintaining high availability for mission-critical applications.
                         </div>
                         
                         <div class="project">
@@ -409,7 +447,7 @@
                         <div class="section-title">TECHNICAL SKILLS</div>
                     </div>
                     
-                                            <div class="skill-category">
+                    <div class="skill-category">
                         <div class="skill-category-title">CLOUD PLATFORMS</div>
                         <div class="skill-list">
                             <strong>AWS:</strong> EC2, RDS, S3, VPC, Lambda<br>
@@ -485,5 +523,21 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function exportToPDF() {
+            // Hide the button during print
+            const button = document.querySelector('.pdf-export-btn');
+            button.style.display = 'none';
+            
+            // Use the browser's print functionality
+            window.print();
+            
+            // Show the button again after print dialog closes
+            setTimeout(() => {
+                button.style.display = 'flex';
+            }, 1000);
+        }
+    </script>
 </body>
 </html>
