@@ -38,6 +38,10 @@ jobs:
         run: |
           mkdir -p _site
           cp *.html _site/
+          cp *.png _site/ 2>/dev/null || :
+          cp *.jpg _site/ 2>/dev/null || :
+          cp *.jpeg _site/ 2>/dev/null || :
+          cp -r es _site/ 2>/dev/null || :
           cp -r assets _site/ 2>/dev/null || :
           cp -r images _site/ 2>/dev/null || :
           cp -r css _site/ 2>/dev/null || :

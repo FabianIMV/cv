@@ -39,7 +39,7 @@
             width: 90px;
             height: 90px;
             border-radius: 50%;
-            background-image: url('./profilepic.png');
+            background-image: url('../profilepic.png');
             background-size: cover;
             background-position: center;
             border: 3px solid #1d4ed8;
@@ -66,7 +66,6 @@
             font-style: italic;
         }
 
-        /* Sidebar section title */
         .s-title {
             font-size: 9.5px;
             font-weight: 700;
@@ -80,7 +79,6 @@
 
         .s-section { margin-bottom: 12px; }
 
-        /* Contact */
         .contact-row {
             display: flex;
             align-items: flex-start;
@@ -91,9 +89,8 @@
             line-height: 1.35;
         }
 
-        .c-icon { flex-shrink: 0; color: #1d4ed8; font-size: 10px; margin-top: 0px; }
+        .c-icon { flex-shrink: 0; color: #1d4ed8; font-size: 10px; }
 
-        /* Education */
         .edu-item { margin-bottom: 8px; }
 
         .edu-deg {
@@ -117,7 +114,6 @@
             line-height: 1.35;
         }
 
-        /* Skills */
         .sk-cat {
             font-size: 8.5px;
             font-weight: 700;
@@ -133,7 +129,6 @@
             line-height: 1.5;
         }
 
-        /* Certifications */
         .cert-row {
             font-size: 8px;
             color: #374151;
@@ -165,7 +160,6 @@
             min-width: 0;
         }
 
-        /* Main section title */
         .m-title {
             font-size: 12px;
             font-weight: 700;
@@ -179,7 +173,6 @@
 
         .m-section { margin-bottom: 15px; }
 
-        /* Job entry */
         .job { margin-bottom: 13px; }
 
         .job-title {
@@ -211,7 +204,6 @@
             white-space: nowrap;
         }
 
-        /* Bullet list */
         .blist {
             list-style: none;
             margin-bottom: 5px;
@@ -235,7 +227,6 @@
             color: #6b7280;
         }
 
-        /* Project sub-header inside job */
         .proj-head {
             font-size: 9.5px;
             font-weight: 700;
@@ -250,7 +241,6 @@
             margin-left: 4px;
         }
 
-        /* Stack tags */
         .tech {
             font-size: 8px;
             color: #6b7280;
@@ -259,7 +249,6 @@
             line-height: 1.4;
         }
 
-        /* Personal projects */
         .pj-item { margin-bottom: 8px; }
 
         .pj-name {
@@ -280,7 +269,6 @@
             line-height: 1.45;
         }
 
-        /* PDF export button */
         .pdf-btn {
             position: fixed;
             top: 20px;
@@ -314,7 +302,7 @@
 
 <div class="page">
 
-    <!-- ══════════════ LEFT SIDEBAR ══════════════ -->
+    <!-- ══════════════ BARRA LATERAL ══════════════ -->
     <div class="sidebar">
 
         <div class="photo-wrap">
@@ -324,12 +312,12 @@
         <div class="name">FABIÁN IGNACIO<br>MUÑOZ VÁSQUEZ</div>
 
         <div class="bio">
-            Site Reliability Engineer with 3+ years of experience in observability and monitoring of critical systems for Fortune 500 and high-availability banking environments. Currently owning RabbitMQ monitoring and Kafka on-call at Banco Falabella. Experienced in golden signals monitoring, SLI/SLO implementation, incident analysis, and post-mortem investigations. Proficient in monitoring-as-code with Terraform across AWS, Datadog, Grafana, and Prometheus. GitHub Actions pipelines deployed to production. Scrum certified.
+            Ingeniero de Confiabilidad de Sitio (SRE) con más de 3 años de experiencia en observabilidad y monitoreo de sistemas críticos para entornos Fortune 500 y banca de alta disponibilidad. Actualmente a cargo del monitoreo de RabbitMQ y Kafka on-call en Banco Falabella. Especializado en monitoreo de señales doradas, implementación SLI/SLO, análisis de incidentes e investigaciones post-mortem. Dominio de monitoring-as-code con Terraform en AWS, Datadog, Grafana y Prometheus. Pipelines de GitHub Actions en producción. Certificado Scrum.
         </div>
 
-        <!-- CONTACT -->
+        <!-- CONTACTO -->
         <div class="s-section">
-            <div class="s-title">Contact</div>
+            <div class="s-title">Contacto</div>
             <div class="contact-row">
                 <span class="c-icon">■</span>
                 <span>+56 9 6414 2352</span>
@@ -348,46 +336,46 @@
         <div class="s-section">
             <div class="s-title">Educación</div>
             <div class="edu-item">
-                <div class="edu-deg">Computer Science Engineering</div>
+                <div class="edu-deg">Ingeniería en Informática</div>
                 <div class="edu-school">Instituto Profesional Duoc UC, 2022–2025</div>
-                <div class="edu-detail">Specialization in Data Science · Grade: 61/70 · Graduated December 2025</div>
+                <div class="edu-detail">Especialización en Ciencia de Datos · Nota: 61/70 · Egresado Diciembre 2025</div>
             </div>
             <div class="edu-item">
-                <div class="edu-deg">Computer Programming Analyst</div>
+                <div class="edu-deg">Analista Programador Computacional</div>
                 <div class="edu-school">Instituto Profesional Duoc UC, 2022–2024</div>
-                <div class="edu-detail">Final project: "True Q" Exchange Application · Grade: 60/70</div>
+                <div class="edu-detail">Proyecto final: Aplicación de Intercambio "True Q" · Nota: 60/70</div>
             </div>
         </div>
 
-        <!-- TECHNICAL SKILLS -->
+        <!-- HABILIDADES TÉCNICAS -->
         <div class="s-section">
-            <div class="s-title">Technical Skills</div>
+            <div class="s-title">Habilidades Técnicas</div>
 
-            <div class="sk-cat">Observability</div>
+            <div class="sk-cat">Observabilidad</div>
             <div class="sk-val">Datadog APM, Grafana Cloud, Prometheus, AWS CloudWatch, Kibana / ELK Stack, Splunk On-Call, VictorOps, Grafana Exporters, BigPanda, Nagios</div>
 
-            <div class="sk-cat">Cloud / Infrastructure</div>
-            <div class="sk-val">AWS (EC2, RDS, S3, VPC, Lambda), GCP (Compute Engine, Cloud Run, IAM, BigQuery), Azure, Docker, Confluent Cloud, Kubernetes (production)</div>
+            <div class="sk-cat">Nube / Infraestructura</div>
+            <div class="sk-val">AWS (EC2, RDS, S3, VPC, Lambda), GCP (Compute Engine, Cloud Run, IAM, BigQuery), Azure, Docker, Confluent Cloud, Kubernetes (producción)</div>
 
-            <div class="sk-cat">Automation</div>
+            <div class="sk-cat">Automatización</div>
             <div class="sk-val">Terraform, Jenkins Pipeline, GitHub Actions (CI/CD), ArgoCD, RunDeck, Kestra, GitLab CI/CD</div>
 
-            <div class="sk-cat">Messaging</div>
-            <div class="sk-val">Apache Kafka (on-call), RabbitMQ (production), Confluent Cloud</div>
+            <div class="sk-cat">Mensajería</div>
+            <div class="sk-val">Apache Kafka (on-call), RabbitMQ (producción), Confluent Cloud</div>
 
-            <div class="sk-cat">Tools</div>
+            <div class="sk-cat">Herramientas</div>
             <div class="sk-val">Confluence, Jira, ServiceNow, Datadog Watchdog, SNMP Exporter, PagerDuty, Vault, Power Automate</div>
 
-            <div class="sk-cat">Languages &amp; Frameworks</div>
+            <div class="sk-cat">Lenguajes y Frameworks</div>
             <div class="sk-val">Python, Bash, YAML/HCL, SQL, NodeJs</div>
 
-            <div class="sk-cat">Methodologies</div>
-            <div class="sk-val">SRE, DevOps, Platform Engineering, Scrum, Incident Analysis, Post-Mortem Investigations</div>
+            <div class="sk-cat">Metodologías</div>
+            <div class="sk-val">SRE, DevOps, Platform Engineering, Scrum, Análisis de Incidentes, Investigaciones Post-Mortem</div>
         </div>
 
-        <!-- CERTIFICATIONS & BADGES -->
+        <!-- CERTIFICACIONES Y BADGES -->
         <div class="s-section">
-            <div class="s-title">Certifications &amp; Badges</div>
+            <div class="s-title">Certificaciones y Badges</div>
 
             <div class="cert-row">
                 <strong>AWS Cloud Practitioner</strong> (2025)
@@ -403,11 +391,11 @@
             </div>
             <div class="cert-row">
                 <strong>MS Applied Skills: Azure Load Testing via GitHub Actions</strong>
-                <span class="cert-issuer">Microsoft · May 2026</span>
+                <span class="cert-issuer">Microsoft · Mayo 2026</span>
             </div>
             <div class="cert-row">
                 <strong>Academy Accreditation – Generative AI Fundamentals</strong>
-                <span class="cert-issuer">Databricks · May 2026</span>
+                <span class="cert-issuer">Databricks · Mayo 2026</span>
             </div>
             <div class="cert-row">
                 <strong>GitHub Foundations</strong>
@@ -423,101 +411,102 @@
             </div>
         </div>
 
-        <!-- LANGUAGES -->
+        <!-- IDIOMAS -->
         <div class="s-section">
-            <div class="s-title">Languages</div>
-            <div class="sk-val">English – B2 Level (Upper Intermediate)</div>
+            <div class="s-title">Idiomas</div>
+            <div class="sk-val">Español – Nativo</div>
+            <div class="sk-val" style="margin-top:3px">Inglés – Nivel B2 (Intermedio Alto)</div>
         </div>
 
     </div><!-- /sidebar -->
 
-    <!-- ══════════════ MAIN CONTENT ══════════════ -->
+    <!-- ══════════════ CONTENIDO PRINCIPAL ══════════════ -->
     <div class="main">
 
-        <!-- WORK EXPERIENCE -->
+        <!-- EXPERIENCIA LABORAL -->
         <div class="m-section">
-            <div class="m-title">Work Experience</div>
+            <div class="m-title">Experiencia Laboral</div>
 
             <!-- Banco Falabella -->
             <div class="job">
-                <div class="job-title">Site Reliability Engineer (SRE)</div>
+                <div class="job-title">Ingeniero de Confiabilidad de Sitio (SRE)</div>
                 <div class="job-meta">
                     <div class="company">Banco Falabella (Falabella Servicios Profesionales de TI SPA)</div>
-                    <div class="job-date">Oct. 2025 – Present</div>
+                    <div class="job-date">Oct. 2025 – Presente</div>
                 </div>
                 <ul class="blist">
-                    <li>Contributing to observability infrastructure for mission-critical banking systems at one of Latin America's largest financial groups</li>
-                    <li>Working on Kafka event streaming monitoring and golden signals observability (latency, traffic, errors, saturation) with Datadog and Grafana</li>
-                    <li>Implemented golden signals monitoring frameworks and alert optimization for banking platforms</li>
-                    <li>Monitoring Kafka message queue infrastructure for high-availability transaction processing</li>
-                    <li>Contributed to infrastructure-as-code automation using Terraform on AWS</li>
-                    <li>Participated in incident response and post-mortem analysis for mission-critical financial services</li>
-                    <li>Contributed to SLO/SLI framework development for reliability targets</li>
+                    <li>Contribuyendo a la infraestructura de observabilidad para sistemas bancarios de misión crítica en uno de los grupos financieros más grandes de Latinoamérica</li>
+                    <li>Monitoreo de event streaming con Kafka y observabilidad de señales doradas (latencia, tráfico, errores, saturación) con Datadog y Grafana</li>
+                    <li>Implementación de frameworks de monitoreo de señales doradas y optimización de alertas para plataformas bancarias</li>
+                    <li>Monitoreo de infraestructura de colas de mensajes Kafka para procesamiento de transacciones de alta disponibilidad</li>
+                    <li>Automatización de infraestructura-como-código usando Terraform en AWS</li>
+                    <li>Participación en respuesta a incidentes y análisis post-mortem para servicios financieros de misión crítica</li>
+                    <li>Contribución al desarrollo del framework SLO/SLI para objetivos de confiabilidad</li>
                 </ul>
                 <div class="tech"><strong>Stack:</strong> Datadog · Grafana · Prometheus · Kafka · AWS · Kubernetes · Terraform · Azure · GCP · ELK · ArgoCD · Nagios · RunDeck · Vault · Power Automate · GitLab</div>
             </div>
 
             <!-- Innfinit -->
             <div class="job">
-                <div class="job-title">Site Reliability Engineer (SRE)</div>
+                <div class="job-title">Ingeniero de Confiabilidad de Sitio (SRE)</div>
                 <div class="job-meta">
-                    <div class="company">Innfinit SpA · Chile · Remote</div>
+                    <div class="company">Innfinit SpA · Chile · Remoto</div>
                     <div class="job-date">Nov. 2022 – Oct. 2025</div>
                 </div>
 
-                <div class="proj-head">Monitoring Optimization &amp; Incident Correlation – Liberty Mutual US (Fortune 100)<span class="proj-period-inline">Oct 2024 – Sep 2025</span></div>
+                <div class="proj-head">Optimización de Monitoreo y Correlación de Incidentes – Liberty Mutual US (Fortune 100)<span class="proj-period-inline">Oct 2024 – Sep 2025</span></div>
                 <ul class="blist">
-                    <li>Conducted root cause analysis and post-mortem investigations using BigPanda correlation platform</li>
-                    <li>Contributed to golden signals monitoring (latency, traffic, errors, saturation) for financial services</li>
-                    <li>Analyzed Splunk monitoring and supported Datadog migration to enhance reliability visibility</li>
-                    <li>Optimized correlation logic and global standards to improve noise reduction and detection accuracy</li>
-                    <li>Created standardized documentation in Confluence to expedite resolution and improve MTTR</li>
+                    <li>Análisis de causa raíz e investigaciones post-mortem usando la plataforma de correlación BigPanda</li>
+                    <li>Contribución al monitoreo de señales doradas (latencia, tráfico, errores, saturación) para servicios financieros</li>
+                    <li>Análisis de monitoreo Splunk y apoyo a migración a Datadog para mejorar visibilidad de confiabilidad</li>
+                    <li>Optimización de lógica de correlación y estándares globales para reducir ruido y mejorar precisión de detección</li>
+                    <li>Creación de documentación estandarizada en Confluence para agilizar resolución y mejorar MTTR</li>
                 </ul>
 
-                <div class="proj-head">Delta Compliance Monitoring Leadership – Sovos Enterprise<span class="proj-period-inline">Aug 2024 – Aug 2025</span></div>
+                <div class="proj-head">Liderazgo Monitoreo Cumplimiento Delta – Sovos Enterprise<span class="proj-period-inline">Ago 2024 – Ago 2025</span></div>
                 <ul class="blist">
-                    <li>Led observability architecture implementation for global tax compliance infrastructure across multiple critical services</li>
-                    <li>Configured Kubernetes monitoring using Prometheus Operator and kube-state-metrics</li>
-                    <li>Developed Grafana Cloud dashboards for Kubernetes, RabbitMQ, Redis, AWS RDS, and S3</li>
-                    <li>Implemented optimized alert system with detailed runbooks to minimize false positives</li>
-                    <li>Led cross-environment migrations (dev/QA→prod) for servers and monitoring agents, including dependency updates and deployment validation</li>
+                    <li>Liderazgo en implementación de arquitectura de observabilidad para infraestructura global de cumplimiento fiscal en múltiples servicios críticos</li>
+                    <li>Configuración de monitoreo Kubernetes con Prometheus Operator y kube-state-metrics</li>
+                    <li>Desarrollo de dashboards Grafana Cloud para Kubernetes, RabbitMQ, Redis, AWS RDS y S3</li>
+                    <li>Implementación de sistema de alertas optimizado con runbooks detallados para minimizar falsos positivos</li>
+                    <li>Liderazgo en migraciones entre entornos (dev/QA→prod) para servidores y agentes de monitoreo, incluyendo actualizaciones de dependencias y validación de despliegue</li>
                 </ul>
 
-                <div class="proj-head">High Availability Observability Platform – Red Salud<span class="proj-period-inline">Feb 2024 – Mar 2025</span></div>
+                <div class="proj-head">Plataforma de Observabilidad de Alta Disponibilidad – Red Salud<span class="proj-period-inline">Feb 2024 – Mar 2025</span></div>
                 <ul class="blist">
-                    <li>Designed high-availability architecture with Grafana and Prometheus for production monitoring</li>
-                    <li>Configured synthetic monitors to validate availability and user experience in critical applications</li>
-                    <li>Implemented centralized logging with Loki and integrated notification channels (Slack, Teams, Email, PagerDuty)</li>
-                    <li>Built modular infrastructure optimizing resources while maintaining capacity for future growth</li>
+                    <li>Diseño de arquitectura de alta disponibilidad con Grafana y Prometheus para monitoreo en producción</li>
+                    <li>Configuración de monitores sintéticos para validar disponibilidad y experiencia de usuario en aplicaciones críticas</li>
+                    <li>Implementación de logging centralizado con Loki e integración de canales de notificación (Slack, Teams, Email, PagerDuty)</li>
+                    <li>Construcción de infraestructura modular optimizando recursos con capacidad de crecimiento futuro</li>
                 </ul>
 
-                <div class="proj-head">Multi-Region Observability Infrastructure – Liberty Andes (Colombia, Chile, Ecuador)<span class="proj-period-inline">Nov 2022 – Dec 2024</span></div>
+                <div class="proj-head">Infraestructura de Observabilidad Multirregión – Liberty Andes (Colombia, Chile, Ecuador)<span class="proj-period-inline">Nov 2022 – Dic 2024</span></div>
                 <ul class="blist">
-                    <li>Deployed and maintained observability infrastructure across 3-country market</li>
-                    <li>Configured synthetic monitoring using CloudWatch and Datadog to validate service availability and user experience</li>
-                    <li>Built CloudFormation stacks for automated deployment of synthetic monitors and CloudWatch alarms</li>
-                    <li>Migrated monitoring infrastructure to Terraform for Datadog monitors, dashboards, and synthetic tests</li>
+                    <li>Despliegue y mantenimiento de infraestructura de observabilidad en mercado de 3 países</li>
+                    <li>Configuración de monitoreo sintético con CloudWatch y Datadog para validar disponibilidad y experiencia de servicio</li>
+                    <li>Construcción de stacks CloudFormation para despliegue automatizado de monitores sintéticos y alarmas CloudWatch</li>
+                    <li>Migración de infraestructura de monitoreo a Terraform para monitores, dashboards y tests sintéticos de Datadog</li>
                 </ul>
             </div>
         </div>
 
-        <!-- PERSONAL PROJECTS -->
+        <!-- PROYECTOS PERSONALES -->
         <div class="m-section">
-            <div class="m-title">Projects</div>
+            <div class="m-title">Proyectos</div>
 
             <div class="pj-item">
-                <div class="pj-name">PromptTrim – AI Prompt Compression Tool</div>
-                <div class="pj-period">May 2026 – Present</div>
+                <div class="pj-name">PromptTrim – Herramienta de Compresión de Prompts IA</div>
+                <div class="pj-period">Mayo 2026 – Presente</div>
                 <div class="pj-desc">
-                    Built and launched a frontend web app that compresses verbose AI prompts into high-quality shorter versions to reduce token usage and API costs. Implemented rule-based and Gemini-powered compression modes with token/cost estimation. Deployed as a static site via GitHub Pages with a privacy-first approach (no backend prompt storage).
+                    Construí y lancé una aplicación web frontend que comprime prompts de IA extensos en versiones más cortas de alta calidad para reducir el uso de tokens y costos de API. Implementé modos de compresión basados en reglas y con Gemini, estimación de tokens/costos. Desplegado como sitio estático en GitHub Pages con enfoque de privacidad (sin almacenamiento de prompts en backend).
                 </div>
             </div>
 
             <div class="pj-item">
-                <div class="pj-name">NutriCombat – Combat Sports Nutrition PWA</div>
-                <div class="pj-period">Aug 2025 – Dec 2025 · Associated with Duoc UC</div>
+                <div class="pj-name">NutriCombat – PWA de Nutrición para Deportes de Combate</div>
+                <div class="pj-period">Ago 2025 – Dic 2025 · Asociado a Duoc UC</div>
                 <div class="pj-desc">
-                    PWA specialized in nutrition for combat sports, helping athletes plan and monitor weight cuts safely. Integrates Google Gemini API to log meals, calculate calories and macronutrients, and provide personalized recommendations according to the weight-cut phase and competition timeline.
+                    PWA especializada en nutrición para deportes de combate, ayudando a atletas a planificar y monitorear cortes de peso de forma segura. Integra Google Gemini API para registrar comidas, calcular calorías y macronutrientes, y entregar recomendaciones personalizadas según la fase de corte de peso y el calendario de competencias.
                 </div>
             </div>
         </div>
