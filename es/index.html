@@ -20,26 +20,25 @@
             background: white;
             box-shadow: 0 6px 30px rgba(0,0,0,0.25);
             display: flex;
-            overflow: hidden;
         }
 
         /* ── SIDEBAR ── */
         .sidebar {
-            width: 188px;
+            width: 232px;
             flex-shrink: 0;
             background: #f1f4f8;
-            padding: 16px 12px;
+            padding: 20px 15px;
             border-right: 1px solid #dde3ec;
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            justify-content: space-between;
         }
 
         .photo-wrap { text-align: center; }
 
         .profile-photo {
-            width: 78px;
-            height: 78px;
+            width: 86px;
+            height: 86px;
             border-radius: 50%;
             background-image: url('../profilepic.png');
             background-size: cover;
@@ -49,26 +48,26 @@
         }
 
         .name {
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 800;
             text-align: center;
             color: #0f172a;
             line-height: 1.2;
-            margin-top: 4px;
+            margin-top: 5px;
         }
 
         .bio {
-            font-size: 7.5px;
+            font-size: 8.5px;
             color: #4b5563;
             text-align: justify;
-            line-height: 1.45;
+            line-height: 1.5;
             font-style: italic;
         }
 
         .s-block { display: flex; flex-direction: column; gap: 4px; }
 
         .s-title {
-            font-size: 8.5px;
+            font-size: 9.5px;
             font-weight: 700;
             color: #1d4ed8;
             text-transform: uppercase;
@@ -79,34 +78,34 @@
 
         .contact-row {
             display: flex;
-            gap: 4px;
-            font-size: 7.5px;
+            gap: 5px;
+            font-size: 8.5px;
             color: #374151;
-            line-height: 1.3;
+            line-height: 1.35;
         }
 
         .c-icon { color: #1d4ed8; flex-shrink: 0; }
 
-        .edu-item { margin-bottom: 4px; }
-        .edu-deg  { font-size: 8.5px; font-weight: 700; color: #0f172a; line-height: 1.2; }
-        .edu-school { font-size: 7.5px; color: #1d4ed8; font-style: italic; }
-        .edu-detail { font-size: 7px; color: #6b7280; line-height: 1.3; }
+        .edu-item { margin-bottom: 5px; }
+        .edu-deg  { font-size: 9.5px; font-weight: 700; color: #0f172a; line-height: 1.2; }
+        .edu-school { font-size: 8.5px; color: #1d4ed8; font-style: italic; }
+        .edu-detail { font-size: 7.5px; color: #6b7280; line-height: 1.3; }
 
-        .sk-cat { font-size: 7.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; margin-top: 4px; }
-        .sk-val { font-size: 7px; color: #4b5563; line-height: 1.4; }
+        .sk-cat { font-size: 8.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; margin-top: 5px; }
+        .sk-val { font-size: 8px; color: #4b5563; line-height: 1.45; }
 
         .cert-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 3px 6px;
+            gap: 4px 6px;
         }
 
         .cert-row {
-            font-size: 7px;
+            font-size: 7.5px;
             color: #374151;
-            padding-left: 8px;
+            padding-left: 9px;
             position: relative;
-            line-height: 1.35;
+            line-height: 1.4;
         }
 
         .cert-row::before {
@@ -114,92 +113,96 @@
             color: #1d4ed8;
             position: absolute;
             left: 0;
-            font-size: 8px;
+            font-size: 9px;
             top: 0;
         }
 
-        .cert-issuer { font-size: 6.5px; color: #9ca3af; display: block; }
+        .cert-issuer { font-size: 7px; color: #9ca3af; display: block; }
 
         /* ── MAIN ── */
         .main {
             flex: 1;
-            padding: 16px 15px;
+            padding: 18px 17px;
             min-width: 0;
+            display: flex;
+            flex-direction: column;
         }
 
         .m-title {
-            font-size: 10.5px;
+            font-size: 11.5px;
             font-weight: 700;
             color: #1d4ed8;
             text-transform: uppercase;
-            letter-spacing: 0.6px;
+            letter-spacing: 0.7px;
             border-bottom: 2px solid #1d4ed8;
             padding-bottom: 2px;
-            margin-bottom: 7px;
+            margin-bottom: 9px;
         }
 
-        .job { margin-bottom: 8px; }
+        .work-section { flex: 1; }
 
-        .job-title { font-size: 10px; font-weight: 700; color: #0f172a; }
+        .job { margin-bottom: 10px; }
+
+        .job-title { font-size: 11px; font-weight: 700; color: #0f172a; }
 
         .job-meta {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin: 1px 0 4px;
+            margin: 2px 0 5px;
             gap: 4px;
         }
 
-        .company { font-size: 8.5px; color: #1d4ed8; font-style: italic; font-weight: 500; flex: 1; }
-        .job-date { font-size: 7.5px; color: #6b7280; flex-shrink: 0; white-space: nowrap; }
+        .company { font-size: 9.5px; color: #1d4ed8; font-style: italic; font-weight: 500; flex: 1; }
+        .job-date { font-size: 8.5px; color: #6b7280; flex-shrink: 0; white-space: nowrap; }
 
-        .blist { list-style: none; margin-bottom: 3px; }
+        .blist { list-style: none; margin-bottom: 4px; }
 
         .blist li {
-            font-size: 8px;
+            font-size: 8.5px;
             color: #374151;
-            margin-bottom: 1.5px;
-            padding-left: 10px;
+            margin-bottom: 2px;
+            padding-left: 11px;
             position: relative;
-            line-height: 1.32;
+            line-height: 1.35;
         }
 
         .blist li::before {
             content: "·";
             position: absolute;
             left: 2px;
-            font-size: 12px;
-            line-height: 0.76;
+            font-size: 13px;
+            line-height: 0.78;
             color: #6b7280;
         }
 
         .proj-head {
-            font-size: 8.5px;
+            font-size: 9.5px;
             font-weight: 700;
             color: #0f172a;
-            margin: 5px 0 2px;
+            margin: 7px 0 3px;
         }
 
-        .proj-period-inline { font-size: 7px; color: #9ca3af; font-weight: 400; margin-left: 3px; }
+        .proj-period-inline { font-size: 7.5px; color: #9ca3af; font-weight: 400; margin-left: 3px; }
 
-        .tech { font-size: 7px; color: #6b7280; font-style: italic; margin-top: 2px; line-height: 1.4; }
+        .tech { font-size: 7.5px; color: #6b7280; font-style: italic; margin-top: 3px; line-height: 1.4; }
 
         .proj-section-title {
-            font-size: 10.5px;
+            font-size: 11.5px;
             font-weight: 700;
             color: #1d4ed8;
             text-transform: uppercase;
-            letter-spacing: 0.6px;
+            letter-spacing: 0.7px;
             border-bottom: 2px solid #1d4ed8;
             padding-bottom: 2px;
-            margin-bottom: 5px;
-            margin-top: 8px;
+            margin-bottom: 6px;
+            margin-top: 10px;
         }
 
-        .pj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px 10px; }
-        .pj-name { font-size: 8.5px; font-weight: 700; color: #0f172a; }
-        .pj-period { font-size: 7px; color: #9ca3af; }
-        .pj-desc { font-size: 7.5px; color: #4b5563; line-height: 1.35; }
+        .pj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px 12px; }
+        .pj-name { font-size: 9px; font-weight: 700; color: #0f172a; }
+        .pj-period { font-size: 7.5px; color: #9ca3af; }
+        .pj-desc { font-size: 8px; color: #4b5563; line-height: 1.4; }
 
         .pdf-btn {
             position: fixed;
@@ -221,7 +224,7 @@
 
         @media print {
             body { background: white !important; padding: 0 !important; }
-            .page { box-shadow: none !important; overflow: visible; }
+            .page { box-shadow: none !important; }
             .pdf-btn { display: none !important; }
             @page { size: letter; margin: 0; }
         }
@@ -317,66 +320,72 @@
 
         <div class="m-title">Experiencia Laboral</div>
 
-        <!-- Banco Falabella -->
-        <div class="job">
-            <div class="job-title">Ingeniero de Confiabilidad de Sitio (SRE)</div>
-            <div class="job-meta">
-                <div class="company">Banco Falabella (Falabella Servicios Profesionales de TI SPA)</div>
-                <div class="job-date">Oct. 2025 – Presente</div>
-            </div>
-            <ul class="blist">
-                <li>Monitoreo de event streaming Kafka y observabilidad de señales doradas (latencia, tráfico, errores, saturación) con Datadog y Grafana para sistemas bancarios de misión crítica</li>
-                <li>Implementación de frameworks de monitoreo, optimización de alertas y desarrollo del framework SLO/SLI para objetivos de confiabilidad</li>
-                <li>Automatización IaC con Terraform en AWS; respuesta a incidentes y análisis post-mortem para servicios financieros críticos</li>
-            </ul>
-            <div class="tech"><strong>Stack:</strong> Datadog · Grafana · Prometheus · Kafka · AWS · Kubernetes · Terraform · Azure · GCP · ELK · ArgoCD · Nagios · RunDeck · Vault · GitLab</div>
-        </div>
+        <div class="work-section">
 
-        <!-- Innfinit -->
-        <div class="job">
-            <div class="job-title">Ingeniero de Confiabilidad de Sitio (SRE)</div>
-            <div class="job-meta">
-                <div class="company">Innfinit SpA · Chile · Remoto</div>
-                <div class="job-date">Nov. 2022 – Oct. 2025</div>
+            <!-- Banco Falabella -->
+            <div class="job">
+                <div class="job-title">Ingeniero de Confiabilidad de Sitio (SRE)</div>
+                <div class="job-meta">
+                    <div class="company">Banco Falabella (Falabella Servicios Profesionales de TI SPA)</div>
+                    <div class="job-date">Oct. 2025 – Presente</div>
+                </div>
+                <ul class="blist">
+                    <li>Monitoreo de Kafka event streaming y observabilidad de señales doradas (latencia, tráfico, errores, saturación) con Datadog y Grafana para sistemas bancarios de misión crítica</li>
+                    <li>Implementación de frameworks de monitoreo de señales doradas, optimización de alertas y desarrollo del framework SLO/SLI para objetivos de confiabilidad</li>
+                    <li>Automatización IaC con Terraform en AWS; respuesta a incidentes y análisis post-mortem para servicios financieros críticos</li>
+                </ul>
+                <div class="tech"><strong>Stack:</strong> Datadog · Grafana · Prometheus · Kafka · AWS · Kubernetes · Terraform · Azure · GCP · ELK · ArgoCD · Nagios · RunDeck · Vault · GitLab</div>
             </div>
 
-            <div class="proj-head">Optimización Monitoreo y Correlación de Incidentes – Liberty Mutual US (Fortune 100)<span class="proj-period-inline">Oct 2024 – Sep 2025</span></div>
-            <ul class="blist">
-                <li>Análisis de causa raíz e investigaciones post-mortem con BigPanda; optimización de lógica de correlación para reducir ruido y mejorar precisión de detección</li>
-                <li>Apoyo a migración de Splunk a Datadog; desarrollo de umbrales SLI/SLO y documentación estandarizada en Confluence para mejorar MTTR</li>
-            </ul>
+            <!-- Innfinit -->
+            <div class="job">
+                <div class="job-title">Ingeniero de Confiabilidad de Sitio (SRE)</div>
+                <div class="job-meta">
+                    <div class="company">Innfinit SpA · Chile · Remoto</div>
+                    <div class="job-date">Nov. 2022 – Oct. 2025</div>
+                </div>
 
-            <div class="proj-head">Liderazgo Monitoreo Cumplimiento Delta – Sovos Enterprise<span class="proj-period-inline">Ago 2024 – Ago 2025</span></div>
-            <ul class="blist">
-                <li>Liderazgo en arquitectura de observabilidad para infraestructura fiscal global; dashboards Grafana Cloud para Kubernetes, RabbitMQ, Redis, AWS RDS y S3</li>
-                <li>Monitoreo Kubernetes con Prometheus Operator; sistema de alertas con runbooks; migraciones entre entornos (dev/QA→prod)</li>
-            </ul>
+                <div class="proj-head">Optimización Monitoreo y Correlación de Incidentes – Liberty Mutual US (Fortune 100)<span class="proj-period-inline">Oct 2024 – Sep 2025</span></div>
+                <ul class="blist">
+                    <li>Análisis de causa raíz e investigaciones post-mortem con BigPanda; optimización de lógica de correlación para reducir ruido y mejorar precisión de detección</li>
+                    <li>Apoyo a migración Splunk → Datadog; desarrollo de umbrales SLI/SLO y documentación estandarizada en Confluence para mejorar MTTR</li>
+                </ul>
 
-            <div class="proj-head">Plataforma Observabilidad Alta Disponibilidad – Red Salud<span class="proj-period-inline">Feb 2024 – Mar 2025</span></div>
-            <ul class="blist">
-                <li>Arquitectura HA con Grafana y Prometheus; monitores sintéticos para validación de disponibilidad; logging centralizado con Loki</li>
-                <li>Integración de canales de notificación (Slack, Teams, PagerDuty); infraestructura modular con capacidad de crecimiento</li>
-            </ul>
+                <div class="proj-head">Liderazgo Monitoreo Cumplimiento Delta – Sovos Enterprise<span class="proj-period-inline">Ago 2024 – Ago 2025</span></div>
+                <ul class="blist">
+                    <li>Liderazgo en arquitectura de observabilidad para infraestructura fiscal global; dashboards Grafana Cloud para Kubernetes, RabbitMQ, Redis, AWS RDS y S3</li>
+                    <li>Monitoreo Kubernetes con Prometheus Operator; sistema de alertas con runbooks; migraciones entre entornos (dev/QA→prod)</li>
+                </ul>
 
-            <div class="proj-head">Infraestructura Observabilidad Multirregión – Liberty Andes (Colombia, Chile, Ecuador)<span class="proj-period-inline">Nov 2022 – Dic 2024</span></div>
-            <ul class="blist">
-                <li>Despliegue de observabilidad en 3 países; monitoreo sintético con CloudWatch y Datadog; stacks CloudFormation para despliegue automatizado</li>
-                <li>Migración de infraestructura de monitoreo completa a Terraform para monitores, dashboards y tests sintéticos de Datadog</li>
-            </ul>
-        </div>
+                <div class="proj-head">Plataforma Observabilidad Alta Disponibilidad – Red Salud<span class="proj-period-inline">Feb 2024 – Mar 2025</span></div>
+                <ul class="blist">
+                    <li>Arquitectura HA con Grafana y Prometheus; monitores sintéticos para validación de disponibilidad; logging centralizado con Loki</li>
+                    <li>Integración de canales de notificación (Slack, Teams, PagerDuty); infraestructura modular con capacidad de crecimiento</li>
+                </ul>
+
+                <div class="proj-head">Infraestructura Observabilidad Multirregión – Liberty Andes (Colombia, Chile, Ecuador)<span class="proj-period-inline">Nov 2022 – Dic 2024</span></div>
+                <ul class="blist">
+                    <li>Despliegue de observabilidad en 3 países; monitoreo sintético con CloudWatch y Datadog; stacks CloudFormation para despliegue automatizado</li>
+                    <li>Migración de infraestructura de monitoreo completa a Terraform para monitores, dashboards y tests sintéticos de Datadog</li>
+                </ul>
+
+            </div>
+        </div><!-- /work-section -->
 
         <!-- PROYECTOS -->
-        <div class="proj-section-title">Proyectos</div>
-        <div class="pj-grid">
-            <div>
-                <div class="pj-name">PromptTrim – Herramienta de Compresión de Prompts IA</div>
-                <div class="pj-period">Mayo 2026 – Presente</div>
-                <div class="pj-desc">App web que comprime prompts de IA para reducir tokens y costos de API. Modos basados en reglas y con Gemini, estimación de costos. Sitio estático en GitHub Pages, sin almacenamiento de prompts.</div>
-            </div>
-            <div>
-                <div class="pj-name">NutriCombat – PWA Nutrición Deportes de Combate</div>
-                <div class="pj-period">Ago 2025 – Dic 2025 · Duoc UC</div>
-                <div class="pj-desc">PWA para planificación de corte de peso en deportes de combate. Google Gemini API para registro de comidas, cálculo de calorías y recomendaciones personalizadas por fase de competencia.</div>
+        <div>
+            <div class="proj-section-title">Proyectos</div>
+            <div class="pj-grid">
+                <div>
+                    <div class="pj-name">PromptTrim – Herramienta de Compresión de Prompts IA</div>
+                    <div class="pj-period">Mayo 2026 – Presente</div>
+                    <div class="pj-desc">App web que comprime prompts de IA para reducir tokens y costos de API. Modos basados en reglas y con Gemini, estimación de costos. Sitio estático en GitHub Pages, sin almacenamiento de prompts.</div>
+                </div>
+                <div>
+                    <div class="pj-name">NutriCombat – PWA Nutrición Deportes de Combate</div>
+                    <div class="pj-period">Ago 2025 – Dic 2025 · Duoc UC</div>
+                    <div class="pj-desc">PWA para planificación de corte de peso en deportes de combate. Google Gemini API para registro de comidas, cálculo de calorías y recomendaciones personalizadas por fase de competencia.</div>
+                </div>
             </div>
         </div>
 
